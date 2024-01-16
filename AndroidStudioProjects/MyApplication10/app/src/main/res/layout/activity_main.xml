@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+    <LinearLayout
+        android:background="@color/grey"
+        android:gravity="center"
+        android:layout_height="55dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:layout_marginRight="40dp"
+            android:layout_width="80dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:background="@color/grey"
+                android:id="@+id/imageButton"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_width="80dp"
+                android:src="@drawable/baseline_home_24" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_height="20dp"
+                android:layout_marginEnd="5dp"
+                android:layout_width="80dp"
+                android:text="Главная"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_width="80dp"
+            android:onClick="menu_my_plants"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:orientation="vertical">
+
+            <ImageView
+                android:alpha="0.6"
+                android:background="@color/grey"
+                android:id="@+id/imageButton2"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_width="70dp"
+                android:padding="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/flower_pot_svgrepo_com" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_height="20dp"
+                android:layout_width="80dp"
+                android:text="Растения"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_width="80dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="menu_user"
+            android:orientation="vertical">
+
+            <ImageView
+                android:alpha="0.6"
+                android:background="@color/grey"
+                android:id="@+id/imageButton3"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_width="70dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/baseline_person_24" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_height="20dp"
+                android:layout_width="80dp"
+                android:text="Профиль"
+                android:textAlignment="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

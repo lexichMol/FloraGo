@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="Fragments.AdviceFragment">
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/main_image_all"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:layout_below="@id/main_image_all"
+            android:id="@+id/text_add_rec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            android:textSize="25sp"
+            android:text="Добавление записи"
+            android:layout_marginBottom="10dp"/>
+        <LinearLayout
+            android:id="@+id/menu_add_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/text_add_rec">
+
+            <LinearLayout
+                android:id="@+id/linear_spray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/custom_rectangle"
+                    android:src="@drawable/spray_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="опрыскивание"
+                    android:textColor="@color/grey"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_watering"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/custom_rectangle_water"
+                    android:src="@drawable/watering_can" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="полив"
+                    android:textColor="@color/grey"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_fertizer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/custom_rectangle_3"
+                    android:src="@drawable/fertilizer" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Удобрение"
+                    android:textColor="@color/grey"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/line_top_adv"
+            android:layout_below="@id/menu_add_record"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Vertical Line"
+            android:layout_marginBottom="10dp"
+            android:background="@color/green"
+            android:textSize="1sp"
+            android:gravity="center_horizontal"/>
+        <LinearLayout
+            android:id="@+id/reminders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/line_top_adv"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginRight="10dp"
+                android:text="Напоминания"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Добавить"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/line_bottom"
+            android:layout_below="@id/reminders"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Vertical Line"
+            android:layout_marginBottom="10dp"
+            android:background="@color/green"
+            android:textSize="1sp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/sovet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line_bottom"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:text="Советы по Уходу"/>
+
+        <TextView
+            android:id="@+id/light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sovet"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="@string/light"/>
+        <TextView
+            android:id="@+id/light_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/light"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/watering"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/light_text"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="@string/watering"/>
+        <TextView
+            android:id="@+id/watering_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/watering"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/fertilizer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/watering_text"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:text="@string/fertilizer"/>
+        <TextView
+            android:id="@+id/fertilizer_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/fertilizer"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/transfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fertilizer_text"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:text="@string/transfer"/>
+        <TextView
+            android:id="@+id/transfer_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/transfer"
+            android:textSize="16sp"/>
+
+
+    </RelativeLayout>
+</ScrollView>
+

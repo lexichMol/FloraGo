@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="whitea">#99FFFFFF</color>
+    <color name="theme_head">#660066</color>
+    <color name="green">#2ADA7F</color>
+    <color name="green_text">#23CC06</color>
+    <color name="white1">#CACACA</color>
+    <color name="menu">#95757171</color>
+    <color name="orange">#FB7500</color>
+    <color name="purple">#8000FF</color>
+    <color name="grey">#938E97</color>
+    <color name="calendar">#95FF00</color>
+    <color name="scroll_menu">#8eb534</color>
+
+</resources>
