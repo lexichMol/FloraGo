@@ -30,6 +30,8 @@ public class Add_record_Activity extends AppCompatActivity {
     String calendar_month;
     String calendar_last_date;
     String image;
+    EditText time;
+    DatabaseHandler databaseHandler;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -49,7 +51,8 @@ public class Add_record_Activity extends AppCompatActivity {
 
 
 
-        DatabaseHandler databaseHandler = new DatabaseHandler(this);
+
+        databaseHandler = new DatabaseHandler(this);
         Bdplants bdplants = databaseHandler.getPlant(Integer.parseInt(id.toString()));
 
         TextView text_record = (TextView) findViewById(R.id.text_record);
@@ -62,7 +65,8 @@ public class Add_record_Activity extends AppCompatActivity {
         text_name_plant.setText(strValue);
 
         String currentTime = new SimpleDateFormat("HH:mm", Locale.getDefault()).format(new Date());
-        EditText time = (EditText) findViewById(R.id.time_txt);
+
+        time = (EditText) findViewById(R.id.time_txt);
         String title = care + " в " + currentTime;
         time.setText(title);
 
@@ -110,23 +114,22 @@ public class Add_record_Activity extends AppCompatActivity {
             }
         });
 
-        TextView add_text = (TextView) findViewById(R.id.add);
-        add_text.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
 
-                String title_txt = String.valueOf(time.getText());
-                databaseHandler.addRecord(new Bdrecords(Integer.parseInt(id), image, calendar_last_date, title_txt));
-                Intent intent = new Intent(Add_record_Activity.this, AllActivity.class);
-                intent.putExtra("id", id);
-                intent.putExtra("frame", "1");
-                startActivity(intent);
-//                Log.d("date", calendar_day + " " + calendar_year + " " + calendar_month + "   " + image);
-            }
-        });
+
 
     }
+
+    public void add_rec(View view) {
+        String title_txt = String.valueOf(time.getText());
+        databaseHandler.addRecord(new Bdrecords(Integer.parseInt(id), image, calendar_last_date, title_txt));
+        Intent intent = new Intent(Add_record_Activity.this, AllActivity.class);
+        intent.putExtra("id", id);
+        intent.putExtra("frame", "1");
+        startActivity(intent);
+    }
+
+
 
     public void back(View v){
         Intent intent = new Intent(this, AllActivity.class);

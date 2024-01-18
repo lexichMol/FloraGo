@@ -34,8 +34,6 @@ public class AllActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_all);
 
-
-
         DatabaseHandler databaseHandler = new DatabaseHandler(this);
         Bundle arguments = getIntent().getExtras();
         id = arguments.get("id").toString();
