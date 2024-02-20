@@ -102,6 +102,295 @@
                 </LinearLayout>
 
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginRight="6dp"
+                    android:onClick="go_to_ampoules"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/Ampoules"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/ampel" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/merriweather_bold"
+                        android:text="Ампельные"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginRight="6dp"
+                    android:onClick="go_to_perennial_flowers"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/Perennial_flowers"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/mnogoletnii" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/merriweather_bold"
+                        android:text="Многолетние"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginRight="6dp"
+                    android:onClick="go_to_ampoules"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/Annual"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/annual" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/merriweather_bold"
+                        android:text="Однолетние \nи двулетние"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginRight="6dp"
+                    android:onClick="go_to_ampoules"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/Bulbous"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/bulbous" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/merriweather_bold"
+                        android:text="Луковичные"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginRight="6dp"
+                    android:onClick="go_to_ampoules"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/Rose"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/rose" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/merriweather_bold"
+                        android:text="Розы"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginRight="6dp"
+                    android:onClick="go_to_ampoules"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/Decorative"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/decorative" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/merriweather_bold"
+                        android:text="Декоративные"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginRight="6dp"
+                    android:onClick="go_to_ampoules"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/Fruit"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/fruit" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/merriweather_bold"
+                        android:text="Плодовые\nдеревья"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginRight="6dp"
+                    android:onClick="go_to_ampoules"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/Berry"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/berry" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/merriweather_bold"
+                        android:text="Ягоды"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginRight="6dp"
+                    android:onClick="go_to_ampoules"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/Vegetables"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/vegetables" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/merriweather_bold"
+                        android:text="овощи"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginRight="6dp"
+                    android:onClick="go_to_ampoules"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/Greens"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/greens" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/merriweather_bold"
+                        android:text="травы и зелень"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
 
 
 

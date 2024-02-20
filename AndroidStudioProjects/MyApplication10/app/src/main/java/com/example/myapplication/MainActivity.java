@@ -11,7 +11,7 @@ import java.util.List;
 
 import Data.DatabaseHandler;
 import Model.Bdrecords;
-import Plants.Cereus;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,17 +21,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         DatabaseHandler databaseHandler = new DatabaseHandler(this);
-//        databaseHandler.addRecord(new Bdrecords(1, "cer", "16:00", "Поливка"));
-//        databaseHandler.addRecord(new Bdrecords(1, "kaktus", "16:30", "Удобрение"));
-//        databaseHandler.addRecord(new Bdrecords(2, "cereus2", "2:50", "Полив"));
-//        databaseHandler.addRecord(new Bdrecords(3, "cereus3", "23:05", "Удобрение"));
-//        Bdplants bdplantsdel1 = databaseHandler.getPlant(1);
-//        databaseHandler.delete_el(bdplantsdel1);
-//        Bdplants bdplantsdel2 = databaseHandler.getPlant(2);
-//        databaseHandler.delete_el(bdplantsdel2);
-//        Bdplants bdplantsdel3 = databaseHandler.getPlant(3);
-//        databaseHandler.delete_el(bdplantsdel3);
-
 
         List<Bdrecords> bdrecordslist = databaseHandler.getAllRecords(1);
         for (Bdrecords bdrecord : bdrecordslist){
@@ -43,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void menu_user(View v){
+        Intent intent = new Intent(this, SearchActivity.class);
+        startActivity(intent);
 
     }
+
 }

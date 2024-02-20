@@ -25,64 +25,31 @@ import Data.DatabaseHandler;
 import Model.Bdplants;
 import Model.Bdrecords;
 
-public class ShrubsActivity extends AppCompatActivity {
+public class Ampoules extends AppCompatActivity {
+
     Bitmap bitmap;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_shrubs);
+        setContentView(R.layout.activity_ampoules);
 
-        // Abutilon_start
-        ImageView img_abutilon = (ImageView) findViewById(R.id.img_abutilon);
-        String url_abutilon = "https://cvetynet.com/wp-content/uploads/2023/11/Abutilon-glavnoe-foto-870x400.webp";
-
-        Picasso.get()
-                .load(url_abutilon)
-                .into(img_abutilon);
-
-        LinearLayout layout_abutilon = (LinearLayout) findViewById(R.id.layout_abutilon);
-        layout_abutilon.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                showBottomSheetDialog(url_abutilon, "abutilon");
-            }
-        });
-        // Abutilon_end
-
-        // Aglaonema_start
-        ImageView img_aglaonema = (ImageView) findViewById(R.id.img_aglaonema);
-        String url_aglaonema = "https://cvetynet.com/wp-content/uploads/2023/06/Aglaonema-870x400.webp";
+        // Begonia_start
+        ImageView img_begonia = (ImageView) findViewById(R.id.img_begonia);
+        String url_begonia = "https://cvetynet.com/wp-content/uploads/2023/06/Ampelnaya-begoniya-1.jpg";
 
         Picasso.get()
-                .load(url_aglaonema)
-                .into(img_aglaonema);
+                .load(url_begonia)
+                .into(img_begonia);
 
-        LinearLayout layout_aglaonema = (LinearLayout) findViewById(R.id.layout_aglaonema);
-        layout_aglaonema.setOnClickListener(new View.OnClickListener() {
+        LinearLayout layout_begonia = (LinearLayout) findViewById(R.id.layout_begonia);
+        layout_begonia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showBottomSheetDialog(url_aglaonema, "aglaonema");
+                showBottomSheetDialog(url_begonia, "begonia");
             }
         });
-        // Aglaonema_end
+        // Begonia_end
 
-
-        // ardisia_start
-        ImageView img_ardisia = (ImageView) findViewById(R.id.img_ardisia);
-        String url_ardisia = "https://cvetynet.com/wp-content/uploads/2023/06/Ardiziya-3.jpg";
-
-        Picasso.get()
-                .load(url_ardisia)
-                .into(img_ardisia);
-
-        LinearLayout layout_ardisia = (LinearLayout) findViewById(R.id.layout_ardisia);
-        layout_ardisia.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                showBottomSheetDialog(url_ardisia, "ardisia");
-            }
-        });
-        // ardisia_end
 
 
     }
@@ -124,9 +91,9 @@ public class ShrubsActivity extends AppCompatActivity {
         btn_add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ShrubsActivity.this, Myplants.class);
+                Intent intent = new Intent(Ampoules.this, Myplants.class);
 
-                DatabaseHandler databaseHandler = new DatabaseHandler(ShrubsActivity.this);
+                DatabaseHandler databaseHandler = new DatabaseHandler(Ampoules.this);
                 Bdplants bdplants = new Bdplants(name, url);
                 databaseHandler.addPlant(bdplants);
                 databaseHandler.getAllPlants();
